@@ -1,0 +1,26 @@
+button {
+	background-color: white;
+	padding: 0.8rem 1.2rem;
+	border: 0;
+	border-radius: 4px;
+	cursor: pointer;
+	will-change: background-color, opacity;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button img {
+	margin-right: 0.2rem;
+}
+
+button:hover {
+	opacity: 0.6;
+}
+
+button span {
+	color: black;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-left: 0.2rem;
+}

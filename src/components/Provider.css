@@ -1,0 +1,12 @@
+.provider {
+	margin: 16px;
+}
+
+.provider:first-of-type {
+	margin-left: 0;
+}
+
+.provider img {
+	width: 64px;
+	border-radius: 16px;
+}

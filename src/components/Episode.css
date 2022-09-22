@@ -1,0 +1,43 @@
+.episode {
+	display: flex;
+	align-items: center;
+	padding: 1% 0;
+}
+
+.episode:hover div,
+.episode:hover p,
+.episode:hover {
+	background-color: #333;
+	cursor: pointer;
+}
+
+.episode > div:first-child {
+	margin-right: 12px;
+}
+
+.episode > div:last-child {
+	margin-left: 12px;
+	align-self: flex-start;
+}
+
+.episode__image img {
+	width: 200px;
+}
+
+.episode__content .title {
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 1rem;
+}
+
+hr {
+	height: 1px;
+	border-width: 0;
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+.episode__number {
+	font-size: 24px;
+	font-weight: bold;
+	padding: 0 2%;
+}

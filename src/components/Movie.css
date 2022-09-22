@@ -1,0 +1,15 @@
+.movie img {
+	width: 160px;
+	object-fit: contain;
+}
+
+.movie {
+	margin: 16px;
+	margin-left: 32px;
+	transition: transform 0.2s ease-out;
+}
+
+.movie:hover {
+	transform: scale(1.08);
+	cursor: pointer;
+}

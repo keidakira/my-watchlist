@@ -1,0 +1,120 @@
+.backdrop_image {
+	height: 560px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+.backdrop_image .content {
+	background-color: rgba(17, 17, 17, 0.7);
+	height: 560px;
+	display: flex;
+	align-items: center;
+}
+
+.backdrop_image *:not(button) {
+	background: none;
+}
+
+.content__poster {
+	width: 240px;
+}
+
+.backdrop_image .content div.content__poster_block {
+	margin-left: 4%;
+}
+
+.backdrop_image .content div.content__info {
+	margin-left: 2%;
+}
+
+.content__info__title {
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.content__info small {
+	padding: 0 4px;
+}
+
+.content__info small:first-of-type {
+	padding: 0px 4px 0px 0px;
+}
+
+.content__info small:last-of-type {
+	padding: 0px 0px 0px 4px;
+}
+
+.content__info__sidetitle {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.content__info__overview {
+	width: 60%;
+	justify-content: safe;
+}
+
+.content .ratings {
+	margin-top: 16px;
+	display: flex;
+	font-size: small;
+}
+
+.content .ratings .imdb,
+.content .ratings .rt,
+.content .ratings .mc {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 24px;
+}
+
+.content .ratings p {
+	margin-left: 8px;
+}
+
+.main_content {
+	padding: 2% 4%;
+}
+
+.main_content__menu {
+	display: flex;
+}
+
+.main_content__menu p {
+	padding: 0px 32px;
+	opacity: 0.5;
+	font-weight: bold;
+}
+
+.main_content__menu p:hover {
+	cursor: pointer;
+	opacity: 1;
+}
+
+.main_content__menu p.active {
+	opacity: 1;
+}
+
+.main_content__menu p:first-child {
+	padding-left: 0;
+}
+
+.main_content__menu p:last-child {
+	padding-right: 0;
+}
+
+.main_content__data {
+	margin-top: 2%;
+}
+
+.movie_info__videos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.movie_info__videos iframe {
+	margin-bottom: 16px;
+}

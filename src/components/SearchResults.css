@@ -1,0 +1,35 @@
+.search_results .infinite-scroll-component {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-gap: 16px 4px;
+}
+
+/* @media only screen and (max-width: 1200px) {
+	.search_results {
+		grid-template-columns: auto auto auto auto auto;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.search_results {
+		grid-template-columns: auto auto auto auto;
+	}
+} */
+
+.search_results .movie {
+	margin: 18px 0px;
+	padding: 0;
+}
+
+.search_results .movie:hover {
+	transform: scale(1.05);
+}
+
+.search_results .tv {
+	margin: 18px 0px;
+	padding: 0;
+}
+
+.search_results .tv:hover {
+	transform: scale(1.05);
+}
