@@ -39,15 +39,15 @@ function MovieInfo() {
     getInfo();
 
     if (loaded) {
-      if (current == 0) {
+      if (current === 0) {
         setMainContentData(<Episodes />);
-      } else if (current == 1) {
+      } else if (current === 1) {
         setMainContentData(<Cast id={info.id} data={info.credits.cast} />);
-      } else if (current == 2) {
+      } else if (current === 2) {
         setMainContentData(<Videos id={info.id} data={info.videos.results} />);
-      } else if (current == 3) {
+      } else if (current === 3) {
         setMainContentData(<Images id={info.id} data={info.images} />);
-      } else if (current == 4) {
+      } else if (current === 4) {
         setMainContentData(
           <WhereToWatch id={info.id} location="US" type="movie" />
         );
@@ -55,7 +55,7 @@ function MovieInfo() {
     }
   }, [movieId, current, loaded]);
 
-  if (split_array.length != 5) {
+  if (split_array.length !== 5) {
     return <p>Error</p>;
   }
 
@@ -125,12 +125,12 @@ function MovieInfo() {
 										)}
 								</div> */}
                 <br />
-                {info.videos.results.filter((e) => e.type == "Trailer")
-                  .length != 0 && (
+                {info.videos.results.filter((e) => e.type === "Trailer")
+                  .length !== 0 && (
                   <Button
                     title="Watch Trailer"
                     link={functions.generateYoutubeLink(
-                      info.videos.results.filter((e) => e.type == "Trailer")[0]
+                      info.videos.results.filter((e) => e.type === "Trailer")[0]
                         .key
                     )}
                     new_tab={true}
@@ -142,31 +142,31 @@ function MovieInfo() {
           <div className="main_content">
             <div className="main_content__menu">
               {/* <p
-								className={current == 0 && "active"}
+								className={current===0 && "active"}
 								onClick={() => setCurrent(0)}
 							>
 								Overview
 							</p> */}
               <p
-                className={current == 1 && "active"}
+                className={current === 1 && "active"}
                 onClick={() => setCurrent(1)}
               >
                 Cast
               </p>
               <p
-                className={current == 2 && "active"}
+                className={current === 2 && "active"}
                 onClick={() => setCurrent(2)}
               >
                 Videos
               </p>
               <p
-                className={current == 3 && "active"}
+                className={current === 3 && "active"}
                 onClick={() => setCurrent(3)}
               >
                 Images
               </p>
               <p
-                className={current == 4 && "active"}
+                className={current === 4 && "active"}
                 onClick={() => setCurrent(4)}
               >
                 Where to Watch?

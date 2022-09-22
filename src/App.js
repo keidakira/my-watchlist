@@ -4,7 +4,7 @@ import Row from "./components/Row";
 import requests from "./utils/requests";
 
 function App() {
-  const { api, urls } = requests;
+  const { urls } = requests;
 
   return (
     <div className="App">
